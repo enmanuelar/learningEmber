@@ -1,9 +1,14 @@
-@import "bootstrap";
+
+@import 'bootstrap';
 
 body {
 	padding-top: 20px;
 }
 
-.contact-textbox, .contact-btn{
-	margin-top: 20px;
+html {
+  	overflow-y: scroll;
+}
+
+.library-item {
+  	min-height: 150px;
 }
