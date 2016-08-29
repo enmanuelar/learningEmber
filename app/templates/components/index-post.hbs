@@ -1,0 +1,19 @@
+{{yield}}
+{{#each posts as |post|}}
+<div class="row">
+    <div class="col-md-6 col-md-offset-3">
+        <article class="single-post">
+            <a href="#"><h2 class="blog-post-title">{{post.title}}</h2></a>
+            <!--<h2 class="blog-post-title">el post nuevo</h2>-->
+            <p class="blog-post-meta">{{post.date}} by vegeta | <i class="fa fa-tag" aria-hidden="true"> science</i></p>
+            <div class="blog-post-body more">
+                {{post.content}}
+            </div>
+            <a href="#"><i class="fa fa-comments blog-post-comment" aria-hidden="true"><span class="comment-num"> 4 </span>comments</i></a>
+        </article>
+    </div>
+</div>
+{{/each}}
+
+
+

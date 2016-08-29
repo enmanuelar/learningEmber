@@ -1,0 +1,19 @@
+<ul class="nav navbar-nav navbar-right">
+	{{#fake-buttons createUser=(action "createUser") createPost=(action "createPost")}}{{/fake-buttons}}
+
+</ul>
+{{#each randomUser as |user|}}
+<p>{{user.user}}</p>
+{{/each}}
+
+<div class="row">
+	<div class="col-md-6">
+		<ul>
+		{{#each users as |user|}}
+			<li>{{user.user}} -- {{users.comments}} -- {{users.posts}}</li>
+		{{/each}}
+		</ul>
+	</div>
+</div>
+{{#index-post posts=posts}}
+{{/index-post}}
